@@ -7,36 +7,38 @@ and write a program that returns a list that contains only the elements that are
 Make sure your program works on two lists of different sizes.
 '''
 
-    my_list = ['red, orange, yellow, green, blue, purple, cyan, indigo']
 
-    some_other_list = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'cyan', 'indigo']
+my_list = ['red, orange, yellow, green, blue, purple, cyan, indigo']
 
-    #1st example
-    for item in my_list:
-        if "e" in item:
-            print(item)
+some_other_list = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'cyan', 'indigo']
 
-    print('\n\n\n\n\n')
+#1st example
+for item in my_list:
+    if "e" in item:
+        print(item)
 
-    #2nd example
-    for item in some_other_list:
-        if "e" in item:
-            print(item)
+print('\n\n\n\n\n')
 
-
-    #Example output
-    '''
-    red, orange, yellow, green, blue, purple, cyan, indigo
+#2nd example
+for item in some_other_list:
+    if "e" in item:
+        print(item)
 
 
-
+#Example output
+'''
+red, orange, yellow, green, blue, purple, cyan, indigo
 
 
 
-    red
-    orange
-    yellow
-    green
-    blue
-    purple
-    '''
+
+
+
+red
+orange
+yellow
+green
+blue
+purple
+'''
+  

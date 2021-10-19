@@ -8,6 +8,7 @@ import random
 
 def choose(some_list):
     choice = random.sample(some_list, 1)
+    choice = choice[0].strip()
     return choice 
 
 if __name__ == "__main__":
@@ -57,7 +58,7 @@ if __name__ == "__main__":
         'has serious game, ',
         'rains magic, ',
         'deserves the Nobel Prize, ',
-        'raises the roof,',
+        'raises the roof, ',
         'breeds miracles, ',
         'is paying off big time, ',
         'shows mad skills, ',
@@ -99,7 +100,7 @@ if __name__ == "__main__":
         try:
             generate_message = input('Generate pep talk?    [y/n]\n').lower().strip()
             if generate_message == 'y':
-                message = ''.join(choose(list_one) + choose(list_two) + choose(list_three) + choose(list_four))
+                message = ''.join(choose(list_one) + ' ' + choose(list_two) + ' ' + choose(list_three) + ' ' + choose(list_four))
                 print(message)
             elif generate_message == 'n':
                 exit()
